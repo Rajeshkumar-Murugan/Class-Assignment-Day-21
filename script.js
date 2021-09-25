@@ -21,6 +21,11 @@ const msg = (count) => {
   
 
   async function check(num){  
+ //with Loop     
+//       for(let i=0; i<=num; i++){
+//     await msg(num-i);
+// }
+  //without Loop
    await msg(num);
    await msg(num-1);
    await msg(num-2);
