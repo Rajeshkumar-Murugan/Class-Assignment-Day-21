@@ -21,15 +21,14 @@ const msg = (count) => {
   
 
   async function check(num){  
-    const count1 = await msg(num);
-    const count2 = await msg(num-1);
-    const count3 = await msg(num-2);
-    const count4 = await msg(num-3);
-    const count5 = await msg(num-4);
-    const count6 = await msg(num-5);
+   await msg(num);
+   await msg(num-1);
+   await msg(num-2);
+   await msg(num-3);
+   await msg(num-4);
+   await msg(num-5);
   }
-  check(5)
-  .catch(() => {
+  check(5).catch(() => {
                 const heading = document.querySelector("h1");
                 heading.innerText = "Happy Newyear!!";
                 });
